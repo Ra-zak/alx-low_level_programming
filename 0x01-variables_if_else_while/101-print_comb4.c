@@ -23,6 +23,7 @@ int main(void)
 				putchar((z % 10) + '0');
 				if (x != y && x != z && y != z)
 					continue;
+				if (x == 7 && y == 8 && z == 9)
 				putchar(',');
 				putchar(' ');
 			}
