@@ -3,14 +3,15 @@
 #include <time.h>
 
 /**
- * main -entry point
- *
- * return 0 if success
- *
+  *  * main - Entry point
+  *
+  *   *
+  *
+  *    * Return: Always 0 (Success)
+  *
 */
 
 int main(void)
-
 {
 
 		int n;
