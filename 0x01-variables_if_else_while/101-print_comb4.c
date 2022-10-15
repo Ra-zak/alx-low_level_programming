@@ -18,17 +18,16 @@ int main(void)
 		{
 			for (z = y + 1; z <= 10; z++)
 			{
-				if (x != y && x != z && y != z)
+				if (x != y && x != iz && y != z)
 				{
-					putchar((x % 10) + '0');
-					putchar((y % 10) + '0');
-					putchar((z % 10) + '0');
-					continue;
-				if (x == 7 && y == 8 && z == 9)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+					putchar(x + '0');
+					putchar(y + '0');
+					putchar(z + '0');
+					if (x + y + z < 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
