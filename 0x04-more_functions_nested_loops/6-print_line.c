@@ -5,10 +5,11 @@
 */
 void print_line(int n)
 {
-	int x = 0;
+	int x;
 
 		if (n > 0)
 		{
+			x = 0;
 			while (x <= n)
 			{
 				_putchar('_');
