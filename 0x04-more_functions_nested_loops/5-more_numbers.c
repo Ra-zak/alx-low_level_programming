@@ -5,13 +5,13 @@
 void more_numbers(void)
 {
 	char x = '0';
-	char y = '0'
+	char y = '0';
 
 	while (x < 10)
 	{
 		if (y >= '0' && y <= 13)
 		{
-			-putchar(y);
+			_putchar(y);
 			y++;
 		}
 		x++;
