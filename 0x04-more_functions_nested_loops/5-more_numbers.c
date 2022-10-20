@@ -4,18 +4,18 @@
 */
 void more_numbers(void)
 {
-	int x = '0';
-	int y;
+	char x = '0';
+	char y = '0'
 
 	while (x < 10)
 	{
-		y = '0';
-		while (y < 15)
+		if (y >= '0' && y <= 13)
 		{
-			_putchar(y);
+			-putchar(y);
 			y++;
 		}
 		x++;
 		_putchar('\n');
 	}
 }
+
