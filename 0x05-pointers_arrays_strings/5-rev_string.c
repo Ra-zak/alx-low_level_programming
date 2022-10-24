@@ -5,23 +5,16 @@
 */
 void rev_string(char *s)
 {
-	int x, y, z;
-	char *c, b;
+	int x = 0, y;
+	char z = s[0];
 
-	c = s;
-	while (s[y] != '\0')
+	while (s[x] != '\0')
+		x++;
+	for (y = 0; y < x; y++)
 	{
-		y++;
-	}
-	for (z = 1; z < y; z++)
-	{
-		c++;
-	}
-	for (x = 0; x < (y / 2); x++)
-	{
-		b = s[x];
-		s[x] = *c;
-		*c = b;
 		x--;
+		z = s[y];
+		s[y] = s[x];
+		s[x] = z;
 	}
 }
