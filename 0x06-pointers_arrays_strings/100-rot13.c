@@ -9,7 +9,7 @@ char *rot13(char *s)
 	int x;
 
 	x = 0;
-	while (s[x])
+	while (s[x] != '\0')
 	{
 		while ((s[x] >= 'a' && s[x] <= 'z') || (s[x] >= 'A' && s[x] <= 'Z'))
 		{
