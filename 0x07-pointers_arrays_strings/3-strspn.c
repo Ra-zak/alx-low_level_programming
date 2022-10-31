@@ -3,14 +3,14 @@
  * _strspn - get len of prefix substring
  * @s: string to search
  * @accept: byte to search for
- * Return: number of byte 
+ * Return: number of byte
 */
 unsigned int _strspn(char *s, char *accept)
 {
 	int x, y;
 	int i = 0;
 
-	for ( x = 0; s[x] != '\0'; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (s[x] != 32)
 		{
