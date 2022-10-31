@@ -17,9 +17,5 @@ char *_strchr(char *s, char c)
 			y = &s[x];
 			return (y);
 		}
-		else
-		{
-			return (NULL);
-		}
 	}
 }
