@@ -5,7 +5,7 @@
  * @x: number to check for against base which is n
  * Return: square root
 */
-int help(x, base)
+int help(int x, int base)
 {
 	if (x * x == base)
 	{
