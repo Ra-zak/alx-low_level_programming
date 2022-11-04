@@ -9,15 +9,15 @@
  * @argv: vector
  * @i: argc counter
  * @y: argv counter
- * REturn: 0 if successi
+ * Return: 0 if successi
 */
 int help(int argc, int i, unsigned int y, char *argv[])
 {
 	for (i = 1; i <= argc; i++)
 	{
-		for (y = 0; *argv[i] != '\0' && y < strlen(argv[i]); y++)
+		for (y = 0; *argv[i] != '\0' && y < strlen(*argv[i]); y++)
 		{
-			if (isdigit(argv[i][y]) == 0)
+			if (isdigit(*argv[i][y]) == 0)
 			{
 				return (1);
 			}
