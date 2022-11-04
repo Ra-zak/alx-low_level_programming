@@ -4,47 +4,33 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * help - for positive numbers
+ * main - for positive numbers
  * @argc: counter
  * @argv: vector
- * @i: argc counter
- * @y: argv counter
  * Return: 0 if successi
 */
-int help(int argc, int i, unsigned int y, char *argv[])
+int main(int argc, char * argv[])
 {
-	for (i = 1; i <= argc; i++)
+	int c, d;
+	int n = 0;
+
+	if (argc < 2)
 	{
-		for (y = 0; *argv[i] != '\0' && y < strlen(argv[i]); y++)
+		printf("0\n");
+		return (0);
+	}
+	for (c = 1; c < argc; c++)
+	{
+		for (d = 0; argv[c][d] != '\0'; d++)
 		{
-			if (isdigit(argv[i][y]) == 0)
+			if (argv[c][d] < '0' || argv[c][d] > '9')
 			{
+				printf("Error\n");
 				return (1);
 			}
 		}
+		n += atoi(argv[c]);
 	}
-	return (0);
-}
-/**
- * main - add positive number
- * @argc: counter of arg
- * @argv: array of str
- * Return: 0 if success
-*/
-int main(int argc, char *argv[])
-{
-	int sum, i;
-
-	sum = 0;
-	if (help(argc, 1, 0, argv) == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	for (i = 0; i < argc; i++)
-	{
-		sum += atoi(argv[i]);
-	}
-	printf("%d\n", sum);
+	printf("%d\n", n);
 	return (0);
 }
