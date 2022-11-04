@@ -9,7 +9,7 @@
  * @argv: vector
  * Return: 0 if successi
 */
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
 	int c, d;
 	int n = 0;
