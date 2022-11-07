@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * str_concat -  concatenates two strings and returns pointer to new memory location
+ * str_concat - concatenates 2 strings & returns pointer to new mem loc.
  * @s1: first string
  * @s2: second string
  * Return: pointer to new memory location
