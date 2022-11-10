@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (s2c = 0; s2[s2c] != '\0'; s2c++)
 		;
 	if (s2c > n)
-		sc2 = n;
+		s2c = n;
 	else
 		n = s2c;
 	size = s1c + s2c + 1;
