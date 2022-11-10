@@ -5,7 +5,7 @@
  * @b: size of space allocated
  * Return: pointer
 */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	void *s;
 
@@ -14,5 +14,3 @@ void *malloc_checked(unsigned int b);
 		exit (98);
 	return (s);
 }
-
-
