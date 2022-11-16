@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * get_op_func - func that selects the correct func to perform 
+ * get_op_func - func that selects the correct func to perform
  * the operation asked by the user
  * @s: is the operator passed as argument to the program
- * Return: int*/
+ * Return: int
+*/
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {

@@ -47,8 +47,8 @@ int op_div(int a, int b)
 
 /**
  * op_mod - finds modulo
- * @a: first int 
- * @b: second int 
+ * @a: first int
+ * @b: second int
  * Return: result of modulo
 */
 int op_mod(int a, int b)
