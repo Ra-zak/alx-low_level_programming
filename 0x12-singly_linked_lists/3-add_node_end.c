@@ -45,6 +45,7 @@ list_t *add_node_end(list_t **head, const char *str)
 int _strlen(const char *s)
 {
 	int c = 0;
+
 	while (*s)
 	{
 		s++;
